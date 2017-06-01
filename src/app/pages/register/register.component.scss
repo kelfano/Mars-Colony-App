@@ -1,0 +1,58 @@
+body{
+  background: #000;
+
+}
+
+  .check-in-page{
+    height: 100vh;
+    background: #000;
+
+    h1{
+      text-align: center;
+      color: #fff;
+      font-weight: 100;
+      margin-top: 0;
+    }
+
+    fieldset{
+      display: flex;
+      flex-wrap: wrap;
+      height: 250px;
+      padding-top: 0;
+      border: transparent;
+
+      input{
+        width: 100%;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        border: transparent;
+        background: #000;
+        color: #fff;
+
+        input.placeholder{
+          color: #ed4343;
+        }
+      }
+
+      select{
+        width: 100%;
+        line-height: 2rem;
+        border: transparent;
+        background: #000;
+        color: #ed4343;
+      }
+    }
+
+    button{
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 100;
+      padding: 1rem, 2rem;
+      border-color: transparent;
+      color: #fff;
+      background: #000;
+
+    }
+  }
+
+

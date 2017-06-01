@@ -1,0 +1,31 @@
+<!--<div class = "check-in-page">
+  <h1>Register</h1>
+  <form>
+    <fieldset>
+      <input type = "text" placeholder = "Name"/>
+      <input type = "number" placeholder = "Age"/>
+      <select>
+        <option value = "1"> Select occupation </option>
+        <option value="{{job.name}}" *ngFor="let job of jobs">
+          {{job.name}}
+        </option>
+      </select>
+    </fieldset>
+    <button (click)="postColonist()">Click</button>
+    <button type = "submit"> <a routerLink="/encounter"> Check in </a></button>
+  </form>
+</div>-->
+
+<div class = "page">
+  <form class="register-form" [formGroup]="registerForm">
+    <fieldset>
+      <input type="text" placeholder="Enter your name" required formControlName ="name"/>
+      <input type="number" placeholder="Enter your age" required formControlName ="age"/>
+      <select required formControlName = "job_id">
+        <option value="1">Select an occupation</option>
+      </select>
+    </fieldset>
+    <button type="submit">Register</button>
+  </form>
+</div>
+

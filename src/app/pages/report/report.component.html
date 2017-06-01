@@ -1,0 +1,17 @@
+<div class = "page">
+  <h1> Report Encounter <span> Safety on Mars is your responsibility</span></h1>
+  <form class ="report-form">
+    <fieldset>
+      <select>
+        <option value = "1"> Select Alien type </option>
+        <option value = "{{alien.type}}" *ngFor ="let alien of aliens"> 
+          {{alien.type}}
+        </option>
+      </select>
+      <label></label>
+      <textarea rows = "10" placeholder="Action taken"></textarea>
+    </fieldset>
+    <button (click)="postReport()">Click</button>
+    <button type = "submit" class = "submit-report">  <a routerLink="/encounter"> Submit Report </a> </button>
+  </form>
+</div>
