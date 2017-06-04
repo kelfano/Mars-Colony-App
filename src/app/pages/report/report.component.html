@@ -1,17 +1,18 @@
 <div class = "page">
-  <h1> Report Encounter <span> Safety on Mars is your responsibility</span></h1>
-  <form class ="report-form">
+  <h1> Report Encounter 
+  <span> Safety on Mars is your responsibility
+  </span>
+  </h1>
+  <form class ="report-form" [formGroup]="reportForm" (ngSubmit)="reported($event)">
     <fieldset>
-      <select>
-        <option value = "1"> Select Alien type </option>
-        <option value = "{{alien.type}}" *ngFor ="let alien of aliens"> 
+      <select formControlName= "atype">
+        <option [value] = "NO_ALIEN_SELECTED"> Select Alien type </option>
+        <option *ngFor ="let alien of aliens" [value] = "alien.type" > 
           {{alien.type}}
         </option>
       </select>
-      <label></label>
-      <textarea rows = "10" placeholder="Action taken"></textarea>
+      <textarea formControlName ="action" rows = "10" placeholder="Action taken"></textarea>
     </fieldset>
-    <button (click)="postReport()">Click</button>
-    <button type = "submit" class = "submit-report">  <a routerLink="/encounter"> Submit Report </a> </button>
+    <button type = "submit" class = "submit-report" [disabled] = "reportForm.invalid"> Submit Report </button>
   </form>
 </div>

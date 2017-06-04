@@ -1,15 +1,17 @@
 .welcome-page {
-  background: linear-gradient(rgba(0,0,0,.8), rgba(237,67,67,.7));
+  // background: linear-gradient(rgba(0,0,0,.8), rgba(237,67,67,.7));
+  background-image: url("https://images8.alphacoders.com/374/374852.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
+  font-family: 'Space Mono', monospace;
 
   h1{
-    color: #fff;
-    font-size: 1.8rem;
+    color:  #FF4500;
+    font-size: 2.5rem;
     font-weight: 100;
     text-align: center;
     text-transform: uppercase;
@@ -18,13 +20,61 @@
     top: 75px;
   }
 
+  .enter-button{
+    height: 10rem;
+
+  .check-in {
+    animation: mymove 2s infinite;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: rgba(237,237,237,.2);
+    position: absolute;
+    left: 47%;
+    bottom: 42%;
+    }
+  }
+
     h2{
-    color: #fff;
-    font-size: 1.8rem;
+    color:  #FF4500;
+    font-size: 2rem;
     font-weight: 100;
     text-align: center;
     justify-content: center;
     position: relative;
-    top: 450px;
+    top: 350px;
+    margin: 0;
   }
+
+}
+
+@keyframes mymove {
+  0% {
+    box-shadow: 
+      0 0 0 1rem rgba(255,255,255,.1),
+      0 0 0 2rem rgba(255,255,255,.15),
+      0 0 0 3rem rgba(255,255,255,.2);
+
+  }
+  50% {
+    box-shadow:
+     0 0 0 1.25rem rgba(255,255,255,.1),
+     0 0 0 2.75rem rgba(255,255,255,.1),
+     0 0 0 4rem rgba(255,255,255,0);
+  }
+
+  75%{
+    box-shadow: 
+     0 0 0 1.5rem rgba(255,255,255,.1),
+     0 0 0 3rem rgba(255,255,255,0),
+     0 0 0 5rem rgba(255,255,255,0);
+  }
+
+  100%{
+    box-shadow: 
+     0 0 0 1.75rem rgba(255,255,255,0),
+     0 0 0 3.75rem rgba(255,255,255,0),
+     0 0 0 6rem rgba(255,255,255,0);
+  }
+
 }

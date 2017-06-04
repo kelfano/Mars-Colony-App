@@ -2,6 +2,8 @@ import {Component, OnInit } from '@angular/core';
 import {Encounter} from '../../models/encounter';
 import {EncounterService} from '../../services/encounter.service';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-encounter',
   templateUrl: './encounter.component.html',
@@ -13,7 +15,10 @@ export class EncounterComponent implements OnInit {
 
   encounters: Encounter[] = [];
 
-  constructor(private encounterService: EncounterService) {
+  constructor(
+    private encounterService: EncounterService,
+    private router: Router
+    ) {
 
    }
 
@@ -26,6 +31,17 @@ export class EncounterComponent implements OnInit {
     });
 
   }
+
+  clicked(e){
+    e.preventDefault();
+    this.postEncounter();
+  }
+
+    postEncounter() {
+      this.router.navigate(['/report']);
+    };
+
+  
  }
 
 
