@@ -1,6 +1,7 @@
 .page{
    background-image: url('https://images4.alphacoders.com/582/582477.jpg');
   font-family: 'Space Mono', monospace;
+   animation: 2s ease-out 0s 1 slideInFromTop;
 }
 
 .page-header h2{
@@ -44,5 +45,14 @@ footer{
     margin-top: 0;
     margin-bottom: 0;
     }
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -13,15 +13,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  //   taped(e){
-  //   e.preventDefault();
-  //   this.signIn();
-  // }
-
-    //  signIn() {
-    //   this.router.navigate(['/register']);
-    // };
-
 
 }
