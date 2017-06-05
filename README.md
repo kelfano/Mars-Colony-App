@@ -1,3 +1,28 @@
+# Mars Colony App
+
+This project is to create a web-based application for Earth colonists exploring Mars using Angular 2. To elaborate further, we build an app with GET and POST HTTP request using Angular's HTTP service to achieve the following goals; 1.) Save a new Colonist's information. 2.) Save a new Alien encounter. 3.) Fetch a list of recent Alien encounter. 4.) Create a new Encounter report. 
+
+
+# Technology used
+
+-angular module (different component files)
+-angular built in directives (ngFor, ngClass, ngIf, ngModel)
+-angular 2 router (navigation from one page to another)
+-Implement with function ngForm (to validate user input)
+-POST & GET request (using REST API)
+-Customize colonist ID and encounter ID tailored to the user input
+-CSS (using box shadow to create a login object with different shadow effects)
+-JSON, API & Endpoint
+-Typescript files and typescript compilers
+
+# Personal learning
+First, I learnt how to use Postman apps to make web request to the server. It uses API to send JSON to make that request. Second, I have learnt how to create a service class for each API endpoint to send and receive the data that access the data to our application. Third, I have added routes to our application which enabled navigation to different pages on our web app. Finally, I have learnt how to code for HTML forms. Using nFor function to implement a select menu according to the user input. Using Two way binding to update the form value whenever the user input something different.
+
+
+
+
+
+
 # Mars1
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
@@ -5,27 +30,4 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
